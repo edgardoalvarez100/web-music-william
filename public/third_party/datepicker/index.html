@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="A_birth" id="A_birth" placeholder="mm/dd/yyyy" class='datepicker-here big-input' data-language='en'>
+    <link href="datepicker.min.css" rel="stylesheet">
+    <script src="jquery.js"></script>
+    <script src="datepicker.min.js"></script>
+    <script src="datepicker.en.js"></script>
+    <script>
+        // Initialization
+        $('.datepicker-here').datepicker([options])
+        // Access instance of plugin
+        $('.datepicker-here').data('datepicker')
+    </script>
+</body>
+</html>

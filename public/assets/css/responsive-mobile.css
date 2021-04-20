@@ -1,0 +1,121 @@
+/* ==============================
+   Phone
+   ============================== */
+@media (max-width: 480px) and (min-width: 320px){
+    body  .mobile-on{
+        display: block !important
+    }
+    .mt-xs-90{margin-top: 120px !important}
+    .mobile-off{
+        display: none !important
+    }
+    .mb-xs-0{margin-bottom: 0px !important }
+    .mb-xs-20{margin-bottom: 20px !important }
+    .mb-xs-40{margin-bottom: 40px !important }
+    .mb-xs-60{
+        margin-bottom: 60px !important
+    }
+    .mb-xs-80{
+        margin-bottom: 80px !important
+    }
+    h4{
+        margin-bottom: 0 !important;
+        line-height: 1 !important
+    }
+    .col-md-4 aside h3{margin-bottom: 10px !important;display: block}
+    .col-md-4 aside{
+        display: block !important
+    }
+    h1:not(.big) {
+        font-size: 24px !important;
+        line-height: 42px;
+    }
+    .height-80s{max-height: 82vh}
+    .height-80s .vertical-align {
+        position: relative;
+        top: 60%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+    .col-xs-6{
+        -ms-flex: 0 0 70%;
+        flex: 0 0 70%;
+        max-width: 70%;
+    }
+    body .white_box {
+        background-color: white;
+        padding: 25px;
+    }
+    body .gray_box{
+        padding:25px !important;
+    }
+    ul.sm.left{
+        margin-left: 15px !important
+    }
+    body .mt0{
+            margin-top: -25vh !important
+    }
+    footer .col-md-6 p{text-align: center !important;font-size: 12px !important;margin-bottom: 0px !important;}
+    body p.lead,
+    body p{text-align: left !important;font-size: 16px !important;line-height: 1.6 !important}
+    h1, h2, h3, h4{font-weight: bold !important}
+    .tobtn a{
+        display: block;
+        width: 100% !important;
+        margin:0;
+        margin-bottom: 20px;
+    }
+    body h1.big {
+        font-size: 38px;
+        text-transform: capitalize !important;
+        line-height: 1;
+    }
+    .cuadro{display: none !important}
+    body .height-fit .vertical-align{
+        position: relative; top: 0%; -webkit-transform: translateY(0%); -ms-transform: translateY(0%); transform: translateY(0%);
+    }
+    .height-fit{
+        height: auto !important;
+        padding:120px 0 !important;
+    }
+    .mailchimp p{
+        margin-bottom: 10px !important;
+        text-align: center !important;display: block
+    }
+    .mailchimp br{
+        display: none
+    }
+    .mailchimp form input {
+        width: 80%;
+        margin: 0;
+    }
+    aside.navigation{max-width: 100%;min-height: 103vh}
+    .close_nav {
+        right: 20px !important;
+        top: 20px !important;
+    }
+}
+.fa-heart {
+    animation: pulse 3s infinite;
+}
+
+
+
+@keyframes  pulse {0% {transform: scale( .75 ); } 20% {transform: scale( 1.3 ); } 40% {transform: scale( .75 ); } 60% {transform: scale( 1.3 ); } 100% {transform: scale( .75 ); } } .archive-nav>li>a:hover{
+  color:#e8c100 !important;
+  }
+
+
+  @media only screen and (-webkit-min-device-pixel-ratio: 2) and (max-device-width: 667px) and (min-device-width: 375px) and (orientation: landscape)
+  {
+    body .locked {
+        display: block !important;
+        position: fixed;
+        width: 100%;
+        z-index: 99999999999999999999;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
+  }

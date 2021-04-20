@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="signArea" >
+        <div class="sig sigWrapper" style="height:auto;">
+            <div class="typed"></div>
+            <canvas class="sign-pad" id="sign-pad" width="300" height="100"></canvas>
+            <br>
+            <a href="#!" id="reset">CLEAR</a>
+        </div>
+    </div>
+
+
+
+    <link href="jquery.signaturepad.css" rel="stylesheet">
+    <script src="jquery.js"></script>
+    <script src="bezier.js"></script>
+    <script src="jquery.signaturepad.js"></script>
+    <script src="json2.min.js"></script>
+    <script src="numeric-1.2.6.min.js"></script>
+    <script>
+
+        $(document).ready(function() {
+            $('#signArea').signaturePad({drawOnly:true, drawBezierCurves:true, lineTop:90});
+        });
+        $("#reset").click(function(e){
+            $("#signArea").signaturePad().clearCanvas();
+        });
+
+
+
+
+
+
+        function saveSignature(){
+            // Get Data Image #1
+            var canvas_img_data1 = $("#sign-pad")[0].toDataURL('image/png');
+            var img_data1 = canvas_img_data1.replace(/^data:image\/(png|jpg);base64,/, "");
+            $("#signature1").attr("value", img_data1)
+
+
+            // Get Data Image #2
+            var canvas_img_data2 = $("#sign-pad2")[0].toDataURL('image/png');
+            var img_data2 = canvas_img_data2.replace(/^data:image\/(png|jpg);base64,/, "");
+            $("#signature2").attr("value", img_data2)
+        }
+
+        $("form").on('submit', function (e) {
+            e.preventDefault();
+
+            if($("#employee_name").val() == "") {
+                $("#employee_name").css({ "border": "1px solid red"});
+                $("#employee_name").focus();
+                return false;
+            }
+
+            if($("#supervisor_name").val() == "") {
+                $("#supervisor_name").css({ "border": "1px solid red"});
+                $("#supervisor_name").focus();
+                return false;
+            }
+
+            if($("#date_range").val() == "") {
+                $("#date_range").css({ "border": "1px solid red"});
+                $("#date_range").focus();
+                return false;
+            }
+
+
+
+            $("#btnSaveSign").html("Sending...").prop('disabled', true)
+            saveSignature();
+
+            setTimeout(function(){
+                $('form').off('submit').submit()
+            }, 1000)
+            // do some stuff, and if it's okay:
+            //$(this).off('submit').submit();
+        });
+
+    </script>
+</body>
+</html>

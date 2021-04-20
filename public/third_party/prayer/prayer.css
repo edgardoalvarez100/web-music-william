@@ -1,0 +1,102 @@
+.prayaction:hover .fa-heart{-webkit-transform: scale(1.3,1.3); } .prayaction:active .fa-heart{-webkit-transform: scale(1.1,1.1); } .show.active{display: flex}
+.relative{position: relative;}
+.flexdiv a,
+.flexdiv strong{
+    color: #787f8d !important;
+}
+.flexdiv{
+    position: absolute;
+    display: flex;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    justify-content: space-around;
+    text-align: center;
+    border-top: 1px solid #b7bcc4;
+    font-size: 11px;
+    font-family: arial;
+    color: #787f8d !important;
+}
+.flexdiv>div{width: 33.3%;padding: 14px 0;}
+.flexdiv>div:nth-child(2){
+    border-left: 1px solid #b7bcc4;
+    border-right: 1px solid #b7bcc4;
+}
+
+.pulse{
+    animation: heartbeat 1.5s infinite;
+}
+@keyframes heartbeat
+{
+  0%
+  {
+    transform: scale( .75 );
+  }
+  20%
+  {
+    transform: scale( 1.3 );
+  }
+  40%
+  {
+    transform: scale( .75 );
+  }
+  60%
+  {
+    transform: scale( 1.3 );
+  }
+  100%
+  {
+    transform: scale( .75 );
+  }
+}
+.col-3>a:hover{color:var(--red-color) !important;}
+.flexdiv>div{
+    font-family: "Oswald";
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+#repport .box{
+    width: 100%;
+    background: transparent !important;
+    border: 1px solid #b7bcc4;
+        padding: 40px 40px 80px 40px;
+        margin-bottom: 50px;
+}
+.f20{font-size: 20px}
+.pray {
+    text-transform: initial !important;
+    font-weight: 400 !important;
+    letter-spacing: 1px !important;
+    color: #B9B9B9 !important;
+    font-size: 16px !important;
+}
+.prayer_text {
+    font-size: 17px !important;
+    letter-spacing: .3px !important;
+    line-height: 29px !important;
+    color: #787f8d !important;
+}
+.button.prayaction:hover,
+.button.prayaction:active,
+.button.prayaction:focus,
+.button.prayaction{
+    color: white !important;
+    background-color: var(--red-color) !important;
+}
+body form input[type="text"],
+body form input[type="email"],
+body form input[type="tel"],
+.textarea,
+body form  select {
+    border-color: #acacac !important;
+}
+
+
+form button.enviarp{background:transparent !important;}
+form button.enviarp:hover{background:white !important;color:black !important;border-color:white !important;}
+
+.relative{position: relative;}
+.mb-40{margin-bottom: 40px}
